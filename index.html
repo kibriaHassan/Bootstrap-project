@@ -3,230 +3,178 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bootstrap Example</title>
+  <title>Modern Bootstrap Page</title>
   <link href="./Css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary container">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+  <!-- 🌟 Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-uppercase" href="#">MyWebsite</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-          </li>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
         </ul>
-
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
       </div>
     </div>
   </nav>
-<div id="carouselExample" class="carousel slide mt-3">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="https://picsum.photos/1200/400?random=1" class="d-block w-100" alt="Slide 1">
-    </div>
-    <div class="carousel-item">
-      <img src="https://picsum.photos/1200/400?random=2" class="d-block w-100" alt="Slide 2">
-    </div>
-    <div class="carousel-item">
-      <img src="https://picsum.photos/1200/400?random=3" class="d-block w-100" alt="Slide 3">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
 
-
-<div class="accordion accordion-flush container d-flex gap-2" id="accordionExample">
-
-    <div class="col-6 ">
-
-<div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-        aria-expanded="true" aria-controls="collapseOne">
-        Accordion
-      </button>
-    </h2>
-    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        This is the first item’s accordion body.
+  <!-- 🖼️ Carousel -->
+  <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://picsum.photos/1200/400?random=1" class="d-block w-100" alt="Slide 1">
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-3">
+          <h3>Welcome to My Website</h3>
+          <p>Modern, Responsive & Built with Bootstrap 5</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://picsum.photos/1200/400?random=2" class="d-block w-100" alt="Slide 2">
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-3">
+          <h3>Clean Layout</h3>
+          <p>Perfect for Portfolios and Company Websites</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://picsum.photos/1200/400?random=3" class="d-block w-100" alt="Slide 3">
+        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-3 p-3">
+          <h3>Fully Responsive</h3>
+          <p>Looks Great on Any Device</p>
+        </div>
       </div>
     </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
   </div>
-  <div class="accordion-item ">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        Accordion Item 
-      </button>
-    </h2>
-    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        This is the second item’s accordion body.
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, pariatur earum laborum rem reiciendis numquam quam adipisci. Voluptatibus sunt, dolore harum reiciendis natus perferendis sint neque quas dolorem veritatis corrupti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum molestiae fuga sequi facilis unde quis? Error nostrum rem sapiente officia quam nisi ullam, vel minima veritatis, qui quae perferendis obcaecati deleniti facere voluptas! Voluptatum recusandae iusto dolorum. Molestiae nulla accusamus nam deserunt, et ducimus doloribus pariatur, molestias ipsa officia ex temporibus consequuntur quia facere expedita, aspernatur dicta sit deleniti suscipit neque quaerat amet architecto inventore. Itaque provident enim veniam tenetur id. Quidem cum exercitationem quisquam modi minus quam quis est nesciunt corporis veniam! Vitae numquam veniam animi, sed hic voluptas autem doloribus quidem sunt neque? Aspernatur temporibus est sapiente magnam nam totam aut veniam inventore, magni maxime iste ipsa itaque enim minima quidem voluptas beatae eveniet necessitatibus ea, repellendus ad dolores tempore cupiditate rem? Repudiandae quas nisi sapiente consequatur officia fuga architecto? Fugit perspiciatis provident tempore cum deleniti quae excepturi. Ullam quisquam exercitationem sed molestias tempora quaerat, iure praesentium laborum eum? Adipisci voluptatibus, excepturi atque a accusantium temporibus magnam id animi natus quas omnis eum repellat dignissimos et tempora? Velit ab, vitae nesciunt tempora ad, dolore vel rem amet expedita perspiciatis officia. Dicta, consequatur necessitatibus debitis illum et labore, consequuntur dolores nihil quia quas fugiat sequi dolorum ut eius a quasi aliquam dolor quo sit possimus blanditiis earum ipsa maxime. Delectus iusto at ex earum aperiam esse aspernatur commodi corporis fugiat cupiditate quia perferendis, aliquid magnam eaque consectetur quaerat rerum magni tenetur eius. Corrupti dolorum molestias, quasi dolore labore atque quidem laborum minima asperiores harum tempora numquam architecto incidunt modi perferendis suscipit, pariatur eaque? Sint nam totam, cum iusto dignissimos odit ipsum itaque eaque placeat, reiciendis accusamus similique dicta. Inventore autem in quod distinctio atque? Nam error saepe, minima ea, dolorem dignissimos similique vero, voluptate labore dicta eius doloremque iste. Quas doloremque perspiciatis harum provident molestiae quia velit dolor expedita minima odit delectus esse, officia unde necessitatibus facere illum quis eligendi doloribus iste. Molestiae nemo laboriosam explicabo corporis repellendus placeat, illum, ea quos provident suscipit reiciendis, similique pariatur odio quia voluptate! Possimus velit ipsum cumque quibusdam voluptatum tempore fugit dolor voluptas, provident, officiis voluptates sunt laboriosam necessitatibus. Ullam incidunt iste exercitationem ad dolore aperiam omnis natus aut atque eligendi. Dignissimos repudiandae deserunt, culpa architecto quidem corrupti, iusto nisi sapiente ipsa ex possimus obcaecati neque dicta veritatis aut porro maiores sequi ea ipsum! Nemo saepe distinctio, odio tenetur ullam obcaecati quidem a, molestias laboriosam id ducimus natus porro harum reprehenderit facilis amet eius quam minima perspiciatis cumque ex commodi beatae aut. Voluptas aut molestiae porro suscipit quasi corrupti assumenda error magnam ipsum quibusdam cumque sit commodi necessitatibus velit, ducimus atque. Excepturi dolore beatae et impedit labore repudiandae blanditiis, sequi illum deleniti mollitia voluptatibus accusamus similique alias voluptatem nam ipsum nulla nisi quo veritatis delectus, nostrum distinctio obcaecati sapiente? Reprehenderit laudantium dicta facilis, repellendus, vitae nam deserunt possimus libero hic quas neque dolorem, perspiciatis deleniti voluptatibus sunt modi atque perferendis. Deleniti quae perspiciatis quos veritatis. Minima nam necessitatibus soluta natus officiis cumque, a in debitis veniam. In amet sequi odio temporibus adipisci?
+
+  <!-- 🔹 Accordion Section -->
+  <section class="container my-5">
+    <h2 class="text-center mb-4 fw-bold">FAQs & Information</h2>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="accordion" id="accordionLeft">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading1">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
+                What is Bootstrap?
+              </button>
+            </h2>
+            <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#accordionLeft">
+              <div class="accordion-body">Bootstrap is a popular front-end framework for building responsive, mobile-first websites.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading2">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
+                Why use it?
+              </button>
+            </h2>
+            <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#accordionLeft">
+              <div class="accordion-body">It saves time and ensures consistency in design, with powerful prebuilt components.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="accordion" id="accordionRight">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading3">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
+                Is it customizable?
+              </button>
+            </h2>
+            <div id="collapse3" class="accordion-collapse collapse show" data-bs-parent="#accordionRight">
+              <div class="accordion-body">Yes! You can easily customize Bootstrap using variables, custom CSS, or SCSS files.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading4">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4">
+                Does it support dark mode?
+              </button>
+            </h2>
+            <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#accordionRight">
+              <div class="accordion-body">Bootstrap 5 supports color modes — light and dark — with flexible customization options.</div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-        Accordion Item
-      </button>
-    </h2>
-    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        This is the third item’s accordion body.
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui maiores quia iste quas numquam eveniet, ad assumenda explicabo quod exercitationem mollitia at vel error impedit repudiandae unde placeat voluptatum nam asperiores, sapiente quae! Enim sunt natus, incidunt hic saepe, laudantium quae explicabo laborum illum repellendus, quibusdam libero eum blanditiis cumque placeat? Expedita cupiditate exercitationem aperiam et eum fuga eveniet! Velit dignissimos id officia doloribus quia magni similique optio suscipit? Eligendi, consequuntur cum, qui ducimus illum praesentium fugiat enim vitae, nam beatae distinctio adipisci nulla earum explicabo dolorum dolorem at numquam! Maiores suscipit, quasi eos nobis excepturi incidunt eaque? At dignissimos distinctio ducimus vero doloribus laboriosam sapiente nam accusantium natus. Quidem iure, illum eveniet unde officiis dolorem quibusdam repudiandae voluptatum numquam quod quo recusandae cumque commodi similique, sapiente impedit deserunt quos? Quae dolores, dolorum at commodi fuga qui magni ab itaque mollitia neque, aut, quod accusamus debitis nulla tenetur quo! Eius eveniet molestias aperiam libero exercitationem totam. Adipisci vitae officia numquam reiciendis veniam velit culpa cum quo pariatur. Quis ad qui soluta excepturi illo dolorem vel nesciunt quisquam. Minima illum porro nesciunt suscipit aliquam ea quasi est minus unde inventore tempora temporibus iusto aspernatur aut saepe nemo, excepturi molestias beatae accusamus qui deleniti corporis omnis reprehenderit? Iste vitae asperiores quasi nihil facilis dolorem, corrupti nostrum aliquam error quibusdam ad nam quae ullam? Quae neque inventore impedit quam autem beatae nostrum laboriosam quasi! Id dolorum debitis hic. Eveniet aperiam nihil blanditiis voluptatem dolor minus illo sequi cumque totam exercitationem placeat, quaerat, dignissimos neque non ipsam modi saepe quidem, voluptas ad eum magni sed praesentium. Voluptatibus tenetur nulla cupiditate, odio facere dolore? Nobis, repellendus qui nisi aliquid assumenda voluptatem sint rerum! Quasi cupiditate, unde eligendi eos pariatur dolores autem commodi reiciendis at ab, odit consectetur facilis. Veniam hic laudantium, accusamus quas quibusdam maiores eaque natus corrupti, consectetur provident aspernatur unde amet dolorem fugiat aperiam, asperiores autem fuga reprehenderit nisi voluptatum rerum ad illo. Optio minima aperiam, sunt consequatur debitis est sequi! Velit ducimus porro maxime libero reprehenderit nisi deleniti, officia harum odit fugit, molestias eum quia aliquam blanditiis, debitis dolores ad animi labore accusantium tenetur eveniet temporibus? Atque voluptatibus possimus laboriosam beatae molestiae ullam a at in vel illum eius maiores debitis aliquam saepe quos praesentium, iure numquam eos et ipsa. A minima recusandae ipsa mollitia. Minima culpa assumenda nisi, nesciunt ut perferendis quibusdam cupiditate, error quidem maiores odit. Beatae eligendi aliquam laudantium nihil hic in quis ipsam. Praesentium, inventore repudiandae vitae debitis eaque neque accusamus quae voluptates earum possimus unde ut culpa itaque tempora ullam nam. Ab inventore quia delectus, beatae consequuntur debitis amet hic repudiandae pariatur, mollitia illo nihil nemo facere iste molestias laboriosam sint repellat, reiciendis sit enim itaque nulla impedit dolor quos! Veniam iste non recusandae provident aspernatur quam ipsam beatae, eveniet sequi tempore, nulla mollitia aliquid laudantium itaque. Voluptate, pariatur ex? Odio, quia, adipisci ab eveniet similique asperiores ad, suscipit unde aut exercitationem corrupti. Cumque at quas labore, facere incidunt sequi et ex vel dignissimos, ab commodi rem?
+  </section>
+
+  <!-- 🧱 Card Section -->
+  <section class="container my-5">
+    <h2 class="text-center mb-4 fw-bold">Our Featured Cards</h2>
+    <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
+      <div class="col">
+        <div class="card h-100 shadow-sm">
+          <img src="https://picsum.photos/300" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Creative Design</h5>
+            <p class="card-text">We create modern and eye-catching web interfaces.</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 shadow-sm">
+          <img src="https://picsum.photos/301" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Responsive Layout</h5>
+            <p class="card-text">Our layouts adapt to all devices and screen sizes.</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 shadow-sm">
+          <img src="https://picsum.photos/302" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Clean Code</h5>
+            <p class="card-text">Built using the best coding practices and frameworks.</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 shadow-sm">
+          <img src="https://picsum.photos/303" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Fast Performance</h5>
+            <p class="card-text">Optimized for speed and better user experience.</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
 
-    </div>
-
-
-    <div class="col-6 ">
-
-<div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-        aria-expanded="true" aria-controls="collapseOne">
-        Accordion
-      </button>
-    </h2>
-    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        This is the first item’s accordion body.
-      </div>
-    </div>
-  </div>
-  <div class="accordion-item ">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        Accordion Item 
-      </button>
-    </h2>
-    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        This is the second item’s accordion body.
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, pariatur earum laborum rem reiciendis numquam quam adipisci. Voluptatibus sunt, dolore harum reiciendis natus perferendis sint neque quas dolorem veritatis corrupti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum molestiae fuga sequi facilis unde quis? Error nostrum rem sapiente officia quam nisi ullam, vel minima veritatis, qui quae perferendis obcaecati deleniti facere voluptas! Voluptatum recusandae iusto dolorum. Molestiae nulla accusamus nam deserunt, et ducimus doloribus pariatur, molestias ipsa officia ex temporibus consequuntur quia facere expedita, aspernatur dicta sit deleniti suscipit neque quaerat amet architecto inventore. Itaque provident enim veniam tenetur id. Quidem cum exercitationem quisquam modi minus quam quis est nesciunt corporis veniam! Vitae numquam veniam animi, sed hic voluptas autem doloribus quidem sunt neque? Aspernatur temporibus est sapiente magnam nam totam aut veniam inventore, magni maxime iste ipsa itaque enim minima quidem voluptas beatae eveniet necessitatibus ea, repellendus ad dolores tempore cupiditate rem? Repudiandae quas nisi sapiente consequatur officia fuga architecto? Fugit perspiciatis provident tempore cum deleniti quae excepturi. Ullam quisquam exercitationem sed molestias tempora quaerat, iure praesentium laborum eum? Adipisci voluptatibus, excepturi atque a accusantium temporibus magnam id animi natus quas omnis eum repellat dignissimos et tempora? Velit ab, vitae nesciunt tempora ad, dolore vel rem amet expedita perspiciatis officia. Dicta, consequatur necessitatibus debitis illum et labore, consequuntur dolores nihil quia quas fugiat sequi dolorum ut eius a quasi aliquam dolor quo sit possimus blanditiis earum ipsa maxime. Delectus iusto at ex earum aperiam esse aspernatur commodi corporis fugiat cupiditate quia perferendis, aliquid magnam eaque consectetur quaerat rerum magni tenetur eius. Corrupti dolorum molestias, quasi dolore labore atque quidem laborum minima asperiores harum tempora numquam architecto incidunt modi perferendis suscipit, pariatur eaque? Sint nam totam, cum iusto dignissimos odit ipsum itaque eaque placeat, reiciendis accusamus similique dicta. Inventore autem in quod distinctio atque? Nam error saepe, minima ea, dolorem dignissimos similique vero, voluptate labore dicta eius doloremque iste. Quas doloremque perspiciatis harum provident molestiae quia velit dolor expedita minima odit delectus esse, officia unde necessitatibus facere illum quis eligendi doloribus iste. Molestiae nemo laboriosam explicabo corporis repellendus placeat, illum, ea quos provident suscipit reiciendis, similique pariatur odio quia voluptate! Possimus velit ipsum cumque quibusdam voluptatum tempore fugit dolor voluptas, provident, officiis voluptates sunt laboriosam necessitatibus. Ullam incidunt iste exercitationem ad dolore aperiam omnis natus aut atque eligendi. Dignissimos repudiandae deserunt, culpa architecto quidem corrupti, iusto nisi sapiente ipsa ex possimus obcaecati neque dicta veritatis aut porro maiores sequi ea ipsum! Nemo saepe distinctio, odio tenetur ullam obcaecati quidem a, molestias laboriosam id ducimus natus porro harum reprehenderit facilis amet eius quam minima perspiciatis cumque ex commodi beatae aut. Voluptas aut molestiae porro suscipit quasi corrupti assumenda error magnam ipsum quibusdam cumque sit commodi necessitatibus velit, ducimus atque. Excepturi dolore beatae et impedit labore repudiandae blanditiis, sequi illum deleniti mollitia voluptatibus accusamus similique alias voluptatem nam ipsum nulla nisi quo veritatis delectus, nostrum distinctio obcaecati sapiente? Reprehenderit laudantium dicta facilis, repellendus, vitae nam deserunt possimus libero hic quas neque dolorem, perspiciatis deleniti voluptatibus sunt modi atque perferendis. Deleniti quae perspiciatis quos veritatis. Minima nam necessitatibus soluta natus officiis cumque, a in debitis veniam. In amet sequi odio temporibus adipisci?
-      </div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-        Accordion Item
-      </button>
-    </h2>
-    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        This is the third item’s accordion body.
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui maiores quia iste quas numquam eveniet, ad assumenda explicabo quod exercitationem mollitia at vel error impedit repudiandae unde placeat voluptatum nam asperiores, sapiente quae! Enim sunt natus, incidunt hic saepe, laudantium quae explicabo laborum illum repellendus, quibusdam libero eum blanditiis cumque placeat? Expedita cupiditate exercitationem aperiam et eum fuga eveniet! Velit dignissimos id officia doloribus quia magni similique optio suscipit? Eligendi, consequuntur cum, qui ducimus illum praesentium fugiat enim vitae, nam beatae distinctio adipisci nulla earum explicabo dolorum dolorem at numquam! Maiores suscipit, quasi eos nobis excepturi incidunt eaque? At dignissimos distinctio ducimus vero doloribus laboriosam sapiente nam accusantium natus. Quidem iure, illum eveniet unde officiis dolorem quibusdam repudiandae voluptatum numquam quod quo recusandae cumque commodi similique, sapiente impedit deserunt quos? Quae dolores, dolorum at commodi fuga qui magni ab itaque mollitia neque, aut, quod accusamus debitis nulla tenetur quo! Eius eveniet molestias aperiam libero exercitationem totam. Adipisci vitae officia numquam reiciendis veniam velit culpa cum quo pariatur. Quis ad qui soluta excepturi illo dolorem vel nesciunt quisquam. Minima illum porro nesciunt suscipit aliquam ea quasi est minus unde inventore tempora temporibus iusto aspernatur aut saepe nemo, excepturi molestias beatae accusamus qui deleniti corporis omnis reprehenderit? Iste vitae asperiores quasi nihil facilis dolorem, corrupti nostrum aliquam error quibusdam ad nam quae ullam? Quae neque inventore impedit quam autem beatae nostrum laboriosam quasi! Id dolorum debitis hic. Eveniet aperiam nihil blanditiis voluptatem dolor minus illo sequi cumque totam exercitationem placeat, quaerat, dignissimos neque non ipsam modi saepe quidem, voluptas ad eum magni sed praesentium. Voluptatibus tenetur nulla cupiditate, odio facere dolore? Nobis, repellendus qui nisi aliquid assumenda voluptatem sint rerum! Quasi cupiditate, unde eligendi eos pariatur dolores autem commodi reiciendis at ab, odit consectetur facilis. Veniam hic laudantium, accusamus quas quibusdam maiores eaque natus corrupti, consectetur provident aspernatur unde amet dolorem fugiat aperiam, asperiores autem fuga reprehenderit nisi voluptatum rerum ad illo. Optio minima aperiam, sunt consequatur debitis est sequi! Velit ducimus porro maxime libero reprehenderit nisi deleniti, officia harum odit fugit, molestias eum quia aliquam blanditiis, debitis dolores ad animi labore accusantium tenetur eveniet temporibus? Atque voluptatibus possimus laboriosam beatae molestiae ullam a at in vel illum eius maiores debitis aliquam saepe quos praesentium, iure numquam eos et ipsa. A minima recusandae ipsa mollitia. Minima culpa assumenda nisi, nesciunt ut perferendis quibusdam cupiditate, error quidem maiores odit. Beatae eligendi aliquam laudantium nihil hic in quis ipsam. Praesentium, inventore repudiandae vitae debitis eaque neque accusamus quae voluptates earum possimus unde ut culpa itaque tempora ullam nam. Ab inventore quia delectus, beatae consequuntur debitis amet hic repudiandae pariatur, mollitia illo nihil nemo facere iste molestias laboriosam sint repellat, reiciendis sit enim itaque nulla impedit dolor quos! Veniam iste non recusandae provident aspernatur quam ipsam beatae, eveniet sequi tempore, nulla mollitia aliquid laudantium itaque. Voluptate, pariatur ex? Odio, quia, adipisci ab eveniet similique asperiores ad, suscipit unde aut exercitationem corrupti. Cumque at quas labore, facere incidunt sequi et ex vel dignissimos, ab commodi rem?
-      </div>
-    </div>
-  </div>
-
-    </div>
-
-
-  
-</div>
-
-  <div class="d-flex p-2 container">
-    <div class="card m-5" style="width: 18rem;">
-    <img src="https://picsum.photos/300" class="card-img-top" alt="Random Image">
-    <div class="card-body">
-      <h5 class="card-title">Card Title</h5>
-      <p class="card-text">
-        Some quick example text to build on the card title and make up the bulk of the card’s content.
+  <!-- 🌈 Footer -->
+  <footer class="bg-dark text-light text-center py-4 mt-5">
+    <div class="container">
+      <p class="mb-2">&copy; 2025 MyWebsite. All rights reserved.</p>
+      <p class="mb-0">
+        <a href="#" class="text-light text-decoration-none mx-2">Facebook</a> |
+        <a href="#" class="text-light text-decoration-none mx-2">Twitter</a> |
+        <a href="#" class="text-light text-decoration-none mx-2">Instagram</a>
       </p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
     </div>
-  </div>
-  <div class="card m-5" style="width: 18rem;">
-    <img src="https://picsum.photos/300" class="card-img-top" alt="Random Image">
-    <div class="card-body">
-      <h5 class="card-title">Card Title</h5>
-      <p class="card-text">
-        Some quick example text to build on the card title and make up the bulk of the card’s content.
-      </p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
+  </footer>
 
-  <div class="card m-5" style="width: 18rem;">
-    <img src="https://picsum.photos/300" class="card-img-top" alt="Random Image">
-    <div class="card-body">
-      <h5 class="card-title">Card Title</h5>
-      <p class="card-text">
-        Some quick example text to build on the card title and make up the bulk of the card’s content.
-      </p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
-   <div class="card m-5" style="width: 18rem;">
-    <img src="https://picsum.photos/300" class="card-img-top" alt="Random Image">
-    <div class="card-body">
-      <h5 class="card-title">Card Title</h5>
-      <p class="card-text">
-        Some quick example text to build on the card title and make up the bulk of the card’s content.
-      </p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
-  </div>
-
-  <footer class="bg-dark text-white text-center py-4 mt-5">
-  <div class="container">
-    <p class="mb-1">&copy; 2025 Your Website Name. All rights reserved.</p>
-    <p class="mb-0">
-      Follow us:
-      <a href="#" class="text-white text-decoration-none mx-2">Facebook</a> |
-      <a href="#" class="text-white text-decoration-none mx-2">Twitter</a> |
-      <a href="#" class="text-white text-decoration-none mx-2">Instagram</a>
-    </p>
-  </div>
-</footer>
   <script src="./js/bootstrap.bundle.min.js"></script>
-
 </body>
-
 </html>
